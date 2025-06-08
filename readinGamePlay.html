@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learn English With Rulli</title>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@latest"></script> <!-- הייבוא של הספריה -->
+  <link rel="stylesheet" href="readiGame.css">
+  <link rel="icon" href=
+"images/4444.jpg"
+        type="image/x-icon" />
+  
+</head>
+
+<body id="bgp">
+
+
+
+  <audio id="myAudio1" autoplay>
+    <source src="oudio/good.mp4" type="audio/mpeg">
+  </audio>
+  <audio id="myAudio2" autoplay>
+    <source src="oudio/error.mp4" type="audio/mpeg">
+  </audio>
+  <audio id="myAudio3" autoplay>
+    <source src="oudio/bay.mp4" type="audio/mpeg">
+  </audio>
+  <div id="allFlip">
+    <div class="container">
+
+
+
+      <div class="score" id="score">נקודות צבירה:<div id="point">0</div> <br> מתוך:<div id="pointFrom">0</div>
+      </div>
+      <div id="theTime">הזמן שנותר: <br>
+        <div class="timer" id="timer">10</div>
+      </div>
+    </div>
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img id="this_image" src="" alt="Avatar">
+        </div>
+        <div class="flip-card-back">
+          <h1 id="this_image_text"></h1>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="do111">
+    <p></p>
+  </div>
+
+
+  <div id="ticket">
+    <button id="11" class="confety1" type="button" onclick="ans11()"></button>
+    <button id="22" class="confety2" type="button" onclick="ans22()"></button>
+    <button id="33" class="confety3" type="button" onclick="ans33()"></button>
+  </div>
+
+
+  <script src="readinGamePlay.js"></script>
+  <script src="readinGame.js"></script>
+</body>
+
+</html>

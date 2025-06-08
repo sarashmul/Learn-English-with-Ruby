@@ -1,0 +1,523 @@
+/* * {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+} */
+
+::selection {
+  color: #0B1126;
+  background-color: rgba(226, 146, 253, 0.433);
+}
+
+#bhp {
+  background-image: url(images/hp.jpg);
+
+  background-size: 208vh;
+  background-position-y: -4vw;
+}
+
+.level {
+  background-image: url(images/level3.jpg);
+  background-size: 208vh;
+  /* background-position-y:-4vw;   */
+}
+
+#bgp {
+  background-image: url(images/22.jpg);
+  background-size: 208vh;
+}
+
+
+#output {
+  color: white;
+  /* height: 10vh;
+  width: 20%; */
+  /* margin:25vw; */
+  font-size: 35px;
+  margin-top: 20%;
+  margin-right: 35%;
+  direction: rtl;
+}
+
+#start {
+  margin-top: 5%;
+  margin-left: 35%;
+  width: 14vw;
+  cursor: pointer;
+
+}
+
+#btmconnect {
+  margin-top: 5%;
+  margin-left: 20vw;
+  cursor: pointer;
+
+}
+
+#btnregister {
+  margin-top: 5%;
+  margin-left: 5vw;
+  cursor: pointer;
+
+}
+
+#btmconnect:hover,
+#btnregister:hover {
+  background-color: #292a2f;
+
+}
+
+.registerForm,
+.connectForm {
+
+
+  background-color: white;
+
+  color: blue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 20vw;
+  height: 80vh;
+
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Full-width input fields */
+input[type=text],
+input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid blue;
+  box-sizing: border-box;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.container2 {
+  color: blue;
+  margin-left: 43vw;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.6);
+  padding-top: 60px;
+  /* padding-left: 10vw; */
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: red;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  /* color: red; */
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {
+    -webkit-transform: scale(0)
+  }
+
+  to {
+    -webkit-transform: scale(1)
+  }
+}
+
+@keyframes animatezoom {
+  from {
+    transform: scale(0)
+  }
+
+  to {
+    transform: scale(1)
+  }
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+
+  .cancelbtn {
+    width: 100%;
+  }
+}
+
+
+#btnlevel1,
+#btnlevel2 {
+  height: 10vh;
+  width: 10vh;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+  /* background: ; */
+  opacity: 0.2;
+  margin-top: 29.5%;
+  margin-left: 22%;
+  box-shadow: 5px 5px 5px rgb(35, 37, 38);
+  /* transition: 0.3s ease; */
+}
+
+#btnlevel1:hover,
+#btnlevel2:hover,
+#btnlevel3:hover {
+  transform: scale(1.2);
+}
+
+#btnlevel3 {
+  height: 10vh;
+  width: 10vh;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+  /* background: ; */
+  opacity: 0.2;
+  margin-top: 29.5%;
+  margin-left: 21%;
+  box-shadow: 5px 5px 5px rgb(35, 37, 38);
+}
+
+#history1 {
+  color: white;
+  border: none;
+  background: none;
+  /* background-color: ; */
+  font-size: 50px;
+  margin-right: 145%;
+  /* margin-bottom: -10%; */
+  border-bottom: -10%;
+}
+
+
+/* עמוד המשחק-gameplay */
+
+
+#ticket {
+  /* margin-bottom: 0%; */
+  margin-top: 5%;
+  margin-left: 10vw;
+  border: none;
+
+}
+
+.confety1,
+.confety2,
+.confety3 {
+  width: 20vw;
+  height: 17vh;
+  color: white;
+  background-color: rgba(234, 192, 248, 0.433);
+  font-size: 7.2vh;
+  text-align: center;
+  border-radius: 5%;
+  border: none;
+}
+
+#do111 {
+  color: white;
+  /* height: 10vh;
+   width: 20%; */
+  /* margin:25vw; */
+  font-size: 40px;
+  margin-top: 5%;
+  margin-right: 35%;
+  direction: rtl;
+}
+
+#allFlip {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 13vh;
+  margin-left: -45vw;
+}
+
+#this_image {
+  /* margin-top: 15vh;
+   margin-left: 30vw; */
+  height: 30vh;
+  width: 23vw;
+  text-align: center;
+}
+
+.flip-card {
+  background-color: transparent;
+  height: 30vh;
+  width: 23vw;
+  perspective: 1000px;
+
+}
+
+.flip-card-inner {
+  position: relative;
+  height: 30vh;
+  width: 23vw;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  height: 30vh;
+  width: 23vw;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: rgba(226, 146, 253, 0.433);
+
+  color: white;
+  transform: rotateY(180deg);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: xx-large;
+}
+
+
+
+.container {
+  width: 190px;
+  border-radius: 10%;
+  padding: 10px;
+  text-align: center;
+  background-color: rgba(234, 172, 255, 0.433);
+  margin-right: 10vw;
+  color: white;
+  opacity: 90%;
+
+}
+
+.container2 {
+  width: 200px;
+  border: 1px solid #000;
+  padding: 10px;
+  text-align: center;
+  background-color: #f0f0f0;
+  margin-right: 10vw;
+
+}
+
+.timer {
+  color: red;
+  font-size: 24px;
+  padding: 2%;
+  /* margin-top: 10vh; */
+}
+
+.score {
+  font-size: 20px;
+  margin-top: 20px;
+  padding: 2%;
+}
+
+#theTime {
+  font-size: 20px;
+  margin-top: 2.5vh;
+}
+
+::selection {
+  color: #0B1126;
+  background-color: rgba(226, 146, 253, 0.433);
+}
+
+@property --angle-to-the-dangle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: true;
+}
+
+#btn_AddUser,
+#btn_checkuser,
+#btmconnect,
+#btnregister,
+#start {
+  background-image:
+    linear-gradient(oklch(59% 56% 259deg),
+      oklch(59% 56% 259deg)),
+    conic-gradient(from var(--angle-to-the-dangle),
+      oklch(59% 56% 259deg) 0deg,
+      white 20deg,
+      oklch(59% 56% 259deg) 40deg);
+  background-clip: padding-box, border-box;
+  cursor: pointer;
+
+  background-position: center center;
+  background-size: 300px 700px;
+  /* background-size: 100%; */
+  background-repeat: no-repeat;
+  animation: rotateColors 2s linear infinite;
+  border: 0;
+  border-radius: 12px;
+  color: white;
+  padding: 1rem 2rem;
+  display: inline-flex;
+  gap: 0.5rem;
+  font-size: 1.5rem;
+  border: 2px solid transparent;
+  /* margin:25vh,25vw; */
+
+}
+
+@keyframes rotateColors {
+  0% {
+    --angle-to-the-dangle: 0deg;
+  }
+
+  100% {
+    --angle-to-the-dangle: 360deg;
+  }
+}
+
+
+#finishGTL {
+  text-decoration: none;
+  margin-left: 25vw;
+  color: inherit;
+}
+
+#finishNL {
+  margin-left: 3vw;
+}
+
+#finishGTL:visited {
+  color: blue;
+}
+
+#finishNL,
+#finishGTL {
+  background: none;
+  border: none;
+  font-size: 10vh;
+  text-align: center;
+  text-decoration: underline;
+  color: rgba(93, 11, 120, 0.709);
+  margin-bottom: 12vh;
+  /* text-underline-position: below; */
+}
+
+#finishH1 {
+  font-size: 200px;
+  font-weight: 600;
+  text-align: center;
+  margin-right: 5vw;
+  font-family: "Playwrite CU", cursive;
+}
+
+
+#finishH2 {
+
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+  margin-bottom: -15vh;
+  margin-top: 15vh;
+  font-size: 120px;
+  text-align: center;
+  margin-right: 5vw;
+}
+
+.pink {
+  color: azure;
+  --color1: #ffc9f3;
+  --color2: #ff93e7;
+  --color3: #ca1f7b;
+  --color4: magenta;
+  --color5: #b81d70;
+}
+
+.turquoise {
+  color: #e2fefe;
+  --color1: #b1fdfe;
+  --color2: #80fdff;
+  --color3: #4ffcff;
+  --color4: #1efbff;
+  --color5: #00e9ec;
+}
+
+.neon {
+  text-shadow: 0 0 10px var(--color1), 0 0 20px var(--color2),
+    0 0 40px var(--color3), 0 0 80px var(--color4), 0 0 100px var(--color4);
+}
+
+
+
+#scoresWin {
+  display: inline;
+}
+
+#winText4,
+#winText2,
+#winText3 {
+  display: inline;
+}
+
+
+#winText1,
+#scoresWin {
+  font-size: 60px;
+  text-align: center;
+  color: white;
+}
+
+#winText1 {
+  margin-top: -15.5vh;
+  font-size: 95px;
+  margin-bottom: 2vh;
+}
+
+#score1,
+#score2,
+#score3 {
+  display: block;
+}

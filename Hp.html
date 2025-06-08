@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn English With Rulli</title>
+    <link rel="stylesheet" href="readiGame.css">
+    <link rel="icon" href=
+"images/4444.jpg"
+        type="image/x-icon" />
+</head>
+
+<body id="bhp">
+
+    <div id="output"></div>
+    <div id="btndiv">
+        <button type="button" id="start" onclick="start()">קח אותי למשחק</button>
+    </div> <!-- הוספת אלמנט זה -->
+    <a href=""></a>
+
+
+    <div id="id01" class="modal">
+        <p style="color: red;margin-left: 42vw;margin-top: 15vh;display: none;" id="errorMssege">אחד או יותר מהנתונים
+            שהקשת
+            שגויים</p>
+        <p style="color: red;margin-left: 42vw;margin-top: 15vh;display: none;" id="registerMssege">אתה אינך רשום במערכת
+            גש
+            להרשם</p>
+
+        <form class="modal-content animate" action="/action_page.php" method="post">
+            <div class="imgcontainer">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                    title="Close Modal">&times;</span>
+
+            </div>
+
+            <div class="container2">
+                <label for="uname"><b>שם משתמש</b></label>
+                <input id="name1" type="text" placeholder="הכנס שם משתמש" name="uname" required>
+
+                <label for="psw"><b>סיסמה</b></label>
+                <input type="password" id="user_password" placeholder="הכנס סיסמה" name="psw" required>
+                <br>
+                <input type="password" required id="user_check_password" name="" value="" placeholder=" אמת סיסמה" />
+                <br>
+                <button id="btn_AddUser" type="button" onclick="AddUser()">המשך</button>
+                <label>
+                    <br>
+                    <input type="checkbox" id="togglePassword" onclick="Passwordf2()"> הצג סיסמה
+                    <br>
+                    <input type="checkbox" checked="checked" name="remember"> זכור אותי
+                    <br>
+                </label>
+            </div>
+
+        </form>
+    </div>
+    <!-- עד פה -->
+    <!--הוספת אודיו-->
+    <audio id="myAudio_hp" autoplay>
+        <source src="oudio/home1.mp4" type="audio/mpeg">
+    </audio>
+    <script src="readinGamePlay.js"></script>
+    <script src="readinGame.js"></script>
+</body>
+
+</html>
